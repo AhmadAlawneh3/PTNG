@@ -1,0 +1,17 @@
+flask
+flask_bcrypt
+flasgger
+flask_jwt_extended
+werkzeug
+boto3
+dotenv
+flask_sqlalchemy
+flask_migrate
+docxtpl
+cryptography
+openai
+
+flask_cors
+flask-Socketio
+gevent 
+gevent-websocket

@@ -1,0 +1,62 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+############################# Backend #############################
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+
+# Environment variables & secrets
+.env
+*.env
+
+# Database files
+*.sqlite3
+*.db
+migrations/
+
+# Logs & debugging
+*.log
+logs/
+
+# Pytest cache
+.pytest_cache/
+
+# VSCode settings (optional)
+.vscode/
+
+# MacOS-specific files
+.DS_Store
+
+# create user  
+create_user.py
+uploads/
+reports/
+instance/

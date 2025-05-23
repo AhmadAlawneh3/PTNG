@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html, body {
+    @apply antialiased overflow-x-hidden;
+    font-family: 'Inter', sans-serif;
+  }
+
+  body {
+    @apply bg-background text-foreground relative min-h-screen transition-colors duration-300;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold text-foreground;
+  }
+}
+
+@layer components {
+  /* Dark panel effect */
+  .glass-panel {
+    @apply bg-card/80 border border-border shadow-subtle rounded-lg backdrop-blur-sm;
+  }
+  
+  /* Button styling */
+  .cyber-button {
+    @apply bg-primary text-white hover:bg-primary/90 
+    transition-all duration-300 rounded px-4 py-2 flex items-center;
+  }
+  
+  /* Dashboard layout */
+  .dashboard-layout {
+    @apply min-h-screen flex relative;
+  }
+  
+  /* Simple hover effect */
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-md;
+  }
+  
+  /* Dark theme specific styles */
+  .dark-panel {
+    @apply bg-card border border-border shadow-subtle rounded-lg;
+  }
+  
+  .dark-button {
+    @apply bg-primary text-white hover:bg-primary/90
+    transition-all duration-300 rounded-md px-4 py-2 flex items-center;
+  }
+  
+  .dark-card {
+    @apply bg-card border border-border shadow-subtle rounded-lg p-6;
+  }
+  
+  .dark-input {
+    @apply bg-muted border border-input rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary/40;
+  }
+  
+  .dark-header {
+    @apply text-primary font-semibold;
+  }
+  
+  .dark-link {
+    @apply text-primary hover:text-primary/80 transition-colors;
+  }
+
+  /* Table styles */
+  .dark-table-header {
+    @apply bg-muted/50 text-foreground font-medium;
+  }
+  
+  .dark-table-row-odd {
+    @apply bg-card;
+  }
+  
+  .dark-table-row-even {
+    @apply bg-muted;
+  }
+  
+  .dark-table-row-hover {
+    @apply hover:bg-muted/70 transition-colors;
+  }
+
+  /* Form elements */
+  .dark-input {
+    @apply bg-muted border border-input rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary;
+  }
+
+  /* Card with dark shadow */
+  .dark-card {
+    @apply bg-card shadow-[0_4px_10px_-2px_rgba(0,0,0,0.3)] rounded-lg border border-border/50;
+  }
+  
+  /* Toast styles */
+  .error-toast {
+    @apply bg-destructive text-white border-destructive/80;
+  }
+  
+  .warning-toast {
+    @apply bg-amber-600 text-white border-amber-600/80;
+  }
+  
+  .success-toast {
+    @apply bg-green-600 text-white border-green-600/80;
+  }
+}
